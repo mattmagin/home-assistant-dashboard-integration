@@ -24,7 +24,7 @@ PANEL_ELEMENT: Final = "ha-dashboard-panel"
 DATA_PANEL_PATH: Final = f"{DOMAIN}_panel_path"
 
 #: Bumped whenever panel.js changes, so a browser does not serve a stale copy.
-PANEL_VERSION: Final = "1"
+PANEL_VERSION: Final = "2"
 
 #: The pages the dashboard app has, from `apps/web/src/pages/index.ts`. The app
 #: intersects this list with its own, so an id it does not know is ignored and

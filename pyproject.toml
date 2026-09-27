@@ -1,0 +1,13 @@
+# Lint and format the integration with `uvx ruff check .` and `uvx ruff format .`.
+[tool.ruff]
+target-version = "py313"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "D"]
+# D401 wants every docstring in the imperative mood. This project writes a
+# docstring as the noun phrase it describes.
+ignore = ["D401"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257"

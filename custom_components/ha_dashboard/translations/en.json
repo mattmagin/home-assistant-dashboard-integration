@@ -1,0 +1,86 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Dashboard",
+        "description": "Adds the configuration the dashboard app reads. Set it up under Configure once it is added."
+      }
+    },
+    "abort": {
+      "already_configured": "Dashboard is already set up.",
+      "single_instance_allowed": "Dashboard is already set up."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Dashboard",
+        "description": "Choose what to change. Each part saves on its own.",
+        "menu_options": {
+          "rooms": "Rooms in the grid",
+          "room": "What a room shows",
+          "favourites": "Favourites",
+          "pages": "Pages",
+          "done": "Done"
+        }
+      },
+      "rooms": {
+        "title": "Rooms in the grid",
+        "description": "Pick the areas the dashboard shows, and drag them into the order you want. An area left out does not appear at all.",
+        "data": {
+          "areas": "Areas"
+        }
+      },
+      "room": {
+        "title": "What a room shows",
+        "description": "Pick the room to change.",
+        "data": {
+          "area_id": "Room"
+        }
+      },
+      "room_edit": {
+        "title": "{area}",
+        "description": "Pick what this room shows, and drag the entities into the order you want.",
+        "data": {
+          "entities": "Entities in this area",
+          "extras": "Other entities",
+          "name": "Name shown instead of the area's",
+          "picture": "Picture shown instead of the area's",
+          "hidden": "Keep this room behind the More button"
+        },
+        "data_description": {
+          "extras": "For an entity that belongs to no area, such as one defined in YAML.",
+          "name": "Leave empty to use the area's own name.",
+          "picture": "Leave empty to use the area's own picture."
+        }
+      },
+      "favourites": {
+        "title": "Favourites",
+        "description": "The things reached for every day. They sit above the room grid on the Overview page, in the order you drag them into.",
+        "data": {
+          "favourites": "Entities"
+        }
+      },
+      "pages": {
+        "title": "Pages",
+        "description": "Which pages the dashboard's sidebar offers. Settings is always shown.",
+        "data": {
+          "pages": "Pages"
+        }
+      }
+    },
+    "abort": {
+      "no_rooms": "No rooms yet. Pick the areas under Rooms in the grid first."
+    }
+  },
+  "selector": {
+    "pages": {
+      "options": {
+        "overview": "Overview",
+        "lights": "Lights",
+        "climate": "Climate",
+        "settings": "Settings"
+      }
+    }
+  }
+}
